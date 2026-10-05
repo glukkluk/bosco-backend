@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Products{% endblock %}
+{% block content %}
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age category</th>
+        <th>Material</th>
+        <th>Brand</th>
+        <th>Price</th>
+    </tr>
+    {% for product in products %}
+    <tr>
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.age_category }}</td>
+        <td>{{ product.material }}</td>
+        <td>{{ product.brand }}</td>
+        <td>{{ product.price }}</td>
+    </tr>
+    {% empty %}
+    <tr>
+        <td colspan="6">No products found.</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
