@@ -1,7 +1,9 @@
+{% load app_extras %}
 <nav>
     <a href="{% url 'products' %}">Product List</a> |
     <a href="{% url 'replenish' 1 %}">Add 1 Product</a> |
     <a href="{% url 'replenish' 10 %}">Add 10 Products</a> |
     <a href="{% url 'replenish' 50 %}">Add 50 Products</a>
+    <br />
+    <p><strong>Товарів у базі: {% product_count products %}</strong></p>
 </nav>
-<hr />

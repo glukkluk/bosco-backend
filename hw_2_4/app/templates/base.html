@@ -6,7 +6,10 @@
         <title>{% block title %}Default Title{% endblock %}</title>
     </head>
     <body>
-        <header>{% include 'partials/menu.html' %}</header>
+        <header>
+            {% include 'partials/menu.html' %}
+            <hr />
+        </header>
         <main>{% block content %}{% endblock %}</main>
     </body>
 </html>
