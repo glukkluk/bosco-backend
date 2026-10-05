@@ -2,7 +2,9 @@
 <nav class="nav-menu">
     <div class="nav-links">
         <a href="{% url 'products' %}" class="nav-link">Product List</a>
-        <a href="{% url 'replenish' 1 %}" class="nav-link btn-small">Add 1</a>
+        <a href="{% url 'add_product' %}" class="nav-link btn-small"
+            >Add Product</a
+        >
         <a href="{% url 'replenish' 10 %}" class="nav-link btn-small">Add 10</a>
         <a href="{% url 'replenish' 50 %}" class="nav-link btn-small">Add 50</a>
     </div>
