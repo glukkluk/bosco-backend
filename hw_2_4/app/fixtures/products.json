@@ -1,0 +1,112 @@
+[
+    {
+        "model": "app.product",
+        "pk": 1,
+        "fields": {
+            "name": "LEGO Star Wars Millennium Falcon",
+            "age_category": "12+",
+            "material": "Plastic",
+            "brand": "LEGO",
+            "price": "159.99"
+        }
+    },
+    {
+        "model": "app.product",
+        "pk": 2,
+        "fields": {
+            "name": "Barbie Dreamhouse",
+            "age_category": "3+",
+            "material": "Plastic",
+            "brand": "Mattel",
+            "price": "189.50"
+        }
+    },
+    {
+        "model": "app.product",
+        "pk": 3,
+        "fields": {
+            "name": "Hot Wheels City Ultimate Garage",
+            "age_category": "5+",
+            "material": "Plastic/Die-cast",
+            "brand": "Mattel",
+            "price": "99.00"
+        }
+    },
+    {
+        "model": "app.product",
+        "pk": 4,
+        "fields": {
+            "name": "Fisher-Price Laugh & Learn Smart Stages Puppy",
+            "age_category": "6m+",
+            "material": "Plastic/Fabric",
+            "brand": "Fisher-Price",
+            "price": "34.99"
+        }
+    },
+    {
+        "model": "app.product",
+        "pk": 5,
+        "fields": {
+            "name": "Classic Teddy Bear",
+            "age_category": "0+",
+            "material": "Plush",
+            "brand": "Gund",
+            "price": "25.00"
+        }
+    },
+    {
+        "model": "app.product",
+        "pk": 6,
+        "fields": {
+            "name": "Rubik's Cube Original",
+            "age_category": "8+",
+            "material": "Plastic",
+            "brand": "Rubik's",
+            "price": "12.95"
+        }
+    },
+    {
+        "model": "app.product",
+        "pk": 7,
+        "fields": {
+            "name": "Nerf Elite 2.0 Commander",
+            "age_category": "8+",
+            "material": "Plastic/Foam",
+            "brand": "Hasbro",
+            "price": "29.99"
+        }
+    },
+    {
+        "model": "app.product",
+        "pk": 8,
+        "fields": {
+            "name": "Sylvanian Families Red Roof Country Home",
+            "age_category": "3+",
+            "material": "Plastic/Fabric",
+            "brand": "Epoch",
+            "price": "85.00"
+        }
+    },
+    {
+        "model": "app.product",
+        "pk": 9,
+        "fields": {
+            "name": "Monopoly Classic Edition",
+            "age_category": "8+",
+            "material": "Paper/Plastic",
+            "brand": "Hasbro",
+            "price": "19.99"
+        }
+    },
+    {
+        "model": "app.product",
+        "pk": 10,
+        "fields": {
+            "name": "Wooden Railway Starter Set",
+            "age_category": "3+",
+            "material": "Wood",
+            "brand": "Brio",
+            "price": "54.50"
+        }
+    }
+]

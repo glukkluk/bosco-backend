@@ -1,3 +1,40 @@
-from django.shortcuts import render
+from random import choices
 
-# Create your views here.
+from django.http import HttpRequest, HttpResponse
+
+from app import models
+
+
+def products(request: HttpRequest) -> HttpResponse:
+    all_products = models.Product.objects.all()
+
+    html_table = """<table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age category</th>
+            <th>Material</th>
+            <th>Brand</th>
+            <th>Price</th>
+        </tr>
+    """
+
+    for product in all_products:
+        html_table += f"""
+        <tr>
+            <td>{product.id}</td>
+            <td>{product.name}</td>
+            <td>{product.age_category}</td>
+            <td>{product.material}</td>
+            <td>{product.brand}</td>
+            <td>{product.price}</td>
+        </tr>
+        """
+
+    html_table += """</table>"""
+
+    return HttpResponse(html_table)
+
+
+def replenish(request: HttpRequest, count: int) -> HttpResponse:
+    return HttpResponse()
