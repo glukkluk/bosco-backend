@@ -1,7 +1,7 @@
 <nav>
-    <a href="/products/">Product List</a> |
-    <a href="/replenish/1">Add 1 Product</a> |
-    <a href="/replenish/10">Add 10 Products</a> |
-    <a href="/replenish/50">Add 50 Products</a>
+    <a href="{% url 'products' %}">Product List</a> |
+    <a href="{% url 'replenish' 1 %}">Add 1 Product</a> |
+    <a href="{% url 'replenish' 10 %}">Add 10 Products</a> |
+    <a href="{% url 'replenish' 50 %}">Add 50 Products</a>
 </nav>
 <hr />
