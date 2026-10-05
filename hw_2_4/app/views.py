@@ -1,3 +1,4 @@
+import json
 from random import choices
 
 from django.http import HttpRequest, HttpResponse
@@ -37,4 +38,13 @@ def products(request: HttpRequest) -> HttpResponse:
 
 
 def replenish(request: HttpRequest, count: int) -> HttpResponse:
-    return HttpResponse()
+    with open("app/fixtures/products.json") as f:
+        rand_products = choices(json.load(f), k=count)
+
+        for product in rand_products:
+            models.Product.objects.create(**product["fields"])
+
+    return HttpResponse(
+        f"<h1>Додано {count} нових записів</h1>"
+        f"<a href='/products/'><button>Повернутися до списку</button></a>"
+    )
